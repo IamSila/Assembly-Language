@@ -52,3 +52,24 @@ CPU itself (separate from memory)
 
 ## check the memory layout.
 
+
+-> stack   (grows downwards)
+    .
+    .
+    .
+    .
+-> heap  (grows upwards) - dynamically allocated data 
+-> Uninitialised data
+-> data - where the initialised data is stored.
+-> text (code) - where machine language is stored
+-> reserved data  (not available to user programmes)
+
+## memory hierachy
+- This is the hierachy of the memory
+-> cpu registers. - fastest, smallest, most expensive.
+-> cache.
+-> Primary storage (main memory / ram)
+-> secondary storage (hard disks, ssd, flsh)
+-> tertiary storage (remote storage, optical, backups, etc)
+
+
