@@ -37,3 +37,31 @@
     - dq -> 64-bit variables.
     - ddq -> 128-bit variables. (integer)
     - dt -> 128-bit variables (float)
+
+## BSS section
+- Uninitialized data is declared in the "section .bss" section.
+- General format is:
+    ```
+    <variableName> <dataType> <count>
+    ```
+- I think of it as an array
+- The following are the data types:
+    - resb -> 8 bit varibles.
+    - resw -> 16 bit variables.
+    - resd -> 32 bit variables
+    - resq - 64 bit variables.
+    - resdq - 128 bit variables.
+- Examples:
+    ```
+    bArr resb 10    ;10 element byte array
+    ```
+
+## Text section
+- The code is placed in the "section .text" section.
+- containes some headers and some directives that define the initial program entry points.
+- For example, assuming a basic program using the standard system linker, the
+following declarations must be included.
+```
+    global _start
+    _start:
+```
