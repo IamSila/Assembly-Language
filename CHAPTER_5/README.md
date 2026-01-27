@@ -32,4 +32,29 @@
 ### Two-pass Assembler
 - Assemble converts the machine code into 0s and 1 (machine language).
 - Machine language can be converted back to assembly language(human readable code).
--
+#### first pass
+- performs the following basic operations:
+    - creates a symbol table: a listing or table of all symbol program symbols, variable names and program labels, and their respective addresses in the program.
+    - Expand macros: program element that can be expand into a set of progammer defined instructions.
+    - Evaluate constant expressions: i.e BUFF equ 1024 , WHERE buff can be ealuated and used in the program.
+    - Assembly directives are also processed in the first pass.
+
+### second Pass
+- vary based on design of the assember.
+- some basic operations performed include:
+    - Final generation of code. - code to machine language.
+    - creation of the list file.
+    - create an object file.
+
+## Linker
+- Also called linkage editor
+- Combines one or more object files into a single executable file.
+    ```
+        ld -g -o example example.o
+    ```
+    - -g: include the debugging information
+    - -o: the output file in this case example.
+    - example.o is the input object file.
+
+- When using functions located in a different, external source file, any function or functions not in the current source file must be declared as extern.
+- 
