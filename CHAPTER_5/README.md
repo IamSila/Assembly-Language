@@ -57,4 +57,19 @@
     - example.o is the input object file.
 
 - When using functions located in a different, external source file, any function or functions not in the current source file must be declared as extern.
-- 
+
+## Loader
+- The loader is a part of the operating system that will load the program from secondary storage into primary storage (i.e., main memory).
+- loader is invoked by simply typing the program name.
+
+## Debugger
+- Is used to control the execution of a program.
+- allows for testing and execution activities to be performed.
+- The debugger usd is the GNU DDD debugger, which provided the front end using the gdb commandline tool.
+
+
+
+
+# EXERCISES
+- The book contains some exercise, which I solved but did not include them in this summary.
+
