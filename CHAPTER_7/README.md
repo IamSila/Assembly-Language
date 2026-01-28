@@ -40,4 +40,6 @@
         mv ax, 42   ; ax =42
         mv byte [new_variable_name], ax ; 
     ```
-- 
+
+## Addresses and Values
+
