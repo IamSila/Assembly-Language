@@ -34,4 +34,28 @@
 ### Displaying register contents.
 - Use the registers window.
 - Select Status -> Registers.
--
+
+
+### DDD/GDB commands.
+- quit/q -> quit the debugger.
+- break <label/addr> -> set a break point.
+- run <args> -> execute the program.
+- continue -> continues the execution.
+- step -> step into the next instruction.(functions and procedure calls)
+- next - next instruction.
+- f3 -> restart the program.
+
+
+### Displaying contents of the stack
+- The stack is normally comprised of 64 bit, unsigned elements.
+- Address is stored in the rsp register.
+- The command to display the top of the stack would be as follows:
+    ```
+        x/ug &rsp
+    ```
+- To display the top 6 items on the stack we would use:
+    ```
+        x/6ug &rsp
+    ```
+
+
