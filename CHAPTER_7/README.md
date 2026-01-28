@@ -42,4 +42,13 @@
     ```
 
 ## Addresses and Values
+- To access the memory we use []
+- Omitting the brackets will not access the memory but will return or obtain the address of the item.
+
+    ```
+        mov rax, qword [var1] ; value in var1 moved to rax.
+        mov rax, var1 ; address of var1 in rax.
+    ```
+
+
 
