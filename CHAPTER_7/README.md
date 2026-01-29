@@ -166,3 +166,43 @@ set based on the sign of the original value.
 ```
 
 #### Signed multiplication
+
+
+
+
+
+## Logical Instructions
+- Truth  table is important here.
+- syntax is as follows:
+    ```
+        and <dest>, <src> ; result placed in dest.
+        ; both operands cannot be memory.
+        ; <dest> cannot be an immediate.
+        ; referred using & in C
+    ```
+
+    ```
+        or <dest>, <src>
+        ; result placed in <dest>
+        ; <dest> cannot be immediate value.
+        ; referred to using || in C
+    ```
+
+    ```
+        xor <dest>, <src>
+        ; 1 xor 1 => 0
+        ; 0 xor 0 => 0
+        ; ^ used in C language.
+    ```
+
+    ```
+        not <op>
+        ; logical not operation
+        ; C language uses !
+    ```
+
+### Shift operations
+- Shifts bits within an operand.(left or right)
+- All bits are shifted one position.
+- The bit that is shifted outside the operand is lost and a 0-bit added at the other side.
+-
