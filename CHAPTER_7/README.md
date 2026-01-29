@@ -207,4 +207,26 @@ set based on the sign of the original value.
 - The bit that is shifted outside the operand is lost and a 0-bit added at the other side.
 
 #### Logical Shift
+- The logical shift is a bitwise operation that shifts all the bits of its source register by the specified number of bits and places the result into the destination register.
+- Syntax would be:
+
+    ```
+        shl <dest>, <imm>
+        shl <dest>, cl
+
+        ; logical shift left operation on <dest> operand.
+        ; The <imm> or cl value must be between 1 and 64.
+    ```
+
+    ```
+        shr <dest>, <imm>
+        shr <dest>, cl
+        ; logical shift right operation on <dest> operand.
+        ; The <imm> or cl value must be between 1 and 64.
+    ```
+
+#### Arithmetic shift.
+- For arithmetic left shift, the original left most bit (sign bit) is replicated to fill in all the vacant positions after the shift.
+
+### Rotate Operations
 - 
