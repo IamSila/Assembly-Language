@@ -72,4 +72,35 @@
 - Since the size is being expanded, the upper-order bits must be
 set based on the sign of the original value.
 
+#### Unsigned widerning Conversions.
+- Upper part of the memory or the register must be set to 0.
+- Unsigned values can only be positive, so upper-order bits must be set to 0.
+    ```
+        mov al, 50 ; move 50 to al register (8 bytes)
+        mov rbx, 0 ; set 0 to rbx register 
+        mov bl, al;
+
+        ; Since the rbx register was set to 0 and then the lower 8-bits were set to the value from al 50 in this example), the entire 64-bit rbx register is now 50.
+    ```
+- Unsigned widening convertion can also be done with:
+    ```
+        movzx <dest>, <src>
+    ```
+- This operation fills the upper order bits with 0.
+- Does not allow quadword <dest> operand with a double word <src> operand.
+
+#### Signed widening Conversions
+- For signed widening conversions, the upper-order bits must be set to either 0's or 1's depending on if the original value was positive or negative.
+- If upper-order bit is 0 - value is positive.
+- if upper-order bit is 1 - value is negative.
+- The upper-order bit of the original value is extended into the higher bits of the new, widened value.
+- Some special move instructions also used:
+    ```
+        movsx <dest>, <src>
+        movsxd <dest>, <src> ; allows for quadword <dest> operand with doubleword <src> operand.
+    ```
+- NB: There is a conversion table in the book ...
+
+
+## Integer Arithmetic Instructions.
 
