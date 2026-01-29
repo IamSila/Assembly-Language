@@ -150,4 +150,19 @@ set based on the sign of the original value.
     ```
 
 ### Integer Multiplication
-- 
+- <mul> and <imul> are used.
+
+#### Unsigned Multiplication
+```
+    mul <src> ; src must be a register or a memory location.
+
+    ; wAns1 = bNumA * bNumB
+    mov al, byte [bNumA]
+    mul byte [bNumB]         ; result stored in ax
+    mov word [wAns1], ax
+
+    ; read more about the other data types, where the results is stored.
+    ; check formats x : y
+```
+
+#### Signed multiplication
