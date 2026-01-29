@@ -139,4 +139,15 @@ set based on the sign of the original value.
     ```
 
 ## Subtraction
+- General form:
+    ```
+        sub <dest>, <src>
+    ```
+- rules apply just as those of add.
+- Decrement operator:
+    ```
+        dec <operand>
+    ```
 
+### Integer Multiplication
+- 
