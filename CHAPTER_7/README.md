@@ -205,4 +205,6 @@ set based on the sign of the original value.
 - Shifts bits within an operand.(left or right)
 - All bits are shifted one position.
 - The bit that is shifted outside the operand is lost and a 0-bit added at the other side.
--
+
+#### Logical Shift
+- 
