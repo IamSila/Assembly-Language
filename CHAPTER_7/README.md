@@ -50,5 +50,8 @@
         mov rax, var1 ; address of var1 in rax.
     ```
 
-
-
+- The adress of a variable can also be accessed with the load effective address or lea instruction.
+    ```
+       lea <reg64>, <mem> ; places the address of <mem> into <reg64> 
+    ```
+- 
