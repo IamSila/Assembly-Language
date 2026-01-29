@@ -103,4 +103,40 @@ set based on the sign of the original value.
 
 
 ## Integer Arithmetic Instructions.
+### addition
+```
+    add <dest>, <src> ; performs <dest> = <dest> + <src>;
+```
+- the <dest> and <src> operand must be of the same size.
+- <dest> cannot be an immediate value.
+- Both <dest> and <src> cannot be memory.
+- some example:
+    ```
+        bVar1 db 42 ; byte sized variable.
+        bVar2 db 73 ; byte sized variable
+        bAns db 0
+
+        ;to perform addition and store it in variable bAns
+        mov al, byte [bVar1]
+        add al, byte [bVar2]
+        mov byte [bAns], al ;move value in al to the variable bAns
+    ```
+- The Increment operation will add one to the value in a variable or register.
+    ```
+        inc <operand> ; operand can be variable, register...
+
+        bNum db 42 
+        inc byte [bNum] ;increments the value of bNum by 1
+
+    ```
+#### addition with carry
+- adds a carry from a previous addition operation.
+- Useful when adding large numbers, specifically numbers larger than the regsiter size of the machine.
+- general form:
+    ```
+        adc <dest>, <src> ; operation perfomed is the following
+        ; <dest> = <dest> + <src> + <carryBit>
+    ```
+
+## Subtraction
 
