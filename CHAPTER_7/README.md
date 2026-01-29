@@ -54,4 +54,22 @@
     ```
        lea <reg64>, <mem> ; places the address of <mem> into <reg64> 
     ```
-- 
+
+## Conversion Instructions. 
+- converting one size to another. e.g byte -> double word etc..
+- Process depends on size and type of operand.
+
+### Narrowing Conversions.
+- Converting from a larger to a smaller type.
+    ```
+        mov rax, 50 ;moving 50 in rax register
+        mov byte [bvar1] , al ; lower portion or rax (al) accesssed to get the value.
+    ```
+- This operation needs attention to detail as compiler does not throw errors
+
+### Widening Conversions
+- From smaller type to larger type.
+- Since the size is being expanded, the upper-order bits must be
+set based on the sign of the original value.
+
+
