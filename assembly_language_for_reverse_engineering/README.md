@@ -1,0 +1,2 @@
+- push ebp : marks the start of a function
+- ret : Marks the end of a function
