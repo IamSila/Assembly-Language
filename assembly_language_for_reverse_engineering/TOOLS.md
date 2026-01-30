@@ -6,5 +6,4 @@ detect it easy
 x64dgb calculator -> converting number formats.
 
 # linux
-gdb
-ddd
+`gdb, ddd`
