@@ -4,8 +4,8 @@
 - after push ebp there mus be mov ebp, esp which prepares the fnction for use.
 - This is called the function prologue.
 # 
-- <mark>ret</mark> : Marks the end of a function
-- Before ret there must be <mark>leave</mark> instruction.
+- `ret` : Marks the end of a function
+- Before ret there must be `leave` instruction.
 - This is called function epilogue.
 
 
