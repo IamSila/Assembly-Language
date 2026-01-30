@@ -1,2 +1,3 @@
 x64dgb   -> windows
-die
+detect it easy
+
