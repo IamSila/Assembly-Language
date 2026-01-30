@@ -31,12 +31,11 @@ The same concept applies to all the above 32 bit registers.
 ``` 
 
 ## 64 bit registers.
-- include the following
-```
-    RAX, RBX, RCX, RDX
+- include the following ` RAX, RBX, RCX, RDX`.
 
-RAX (64 bit) -> eax (32 bit) -> ah(8 bits) and al(8 bits)
-same concept for all the other 64 bit registers
+```
+    RAX (64 bit) -> eax (32 bit) -> ah(8 bits) and al(8 bits)
+    same concept for all the other 64 bit registers
 ```
 
 ## Other registers
