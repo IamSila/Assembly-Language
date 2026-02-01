@@ -12,4 +12,16 @@
     add esi, eax
 
 
+
+
+    mov edi, 0xAB29FFFF
+    mov ecx, 0x00000703
+    mov eax, 0x000000FF
+    add al, ch
+    add di, cx
+    mov edi, 0xAB29FFFF
+    add edi, ecx
+
+
+
 ```
